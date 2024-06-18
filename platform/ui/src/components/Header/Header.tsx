@@ -72,6 +72,16 @@ function Header({
             />
           )}
           <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
+          <IconButton
+            onClick={() => (window.location = '/local')}
+            id={'options-upload'}
+            variant="text"
+            color="inherit"
+            size="initial"
+            className="text-primary-active hover:bg-primary-dark mh-6 h-full w-full"
+          >
+            <Icon name="icon-upload" />
+          </IconButton>
           <div className="flex-shrink-0">
             <Dropdown
               id="options"
